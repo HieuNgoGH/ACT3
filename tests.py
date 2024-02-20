@@ -1,0 +1,14 @@
+import unittest
+from check_pwd import check_pwd
+
+
+class TestCase(unittest.TestCase):
+    def test1(self):
+        test_input = "less8"
+        expected = False
+        self.assertFalse(check_pwd(test_input), expected)
+
+
+if __name__ == '__main__':
+    unittest.main()
+
