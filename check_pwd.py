@@ -3,4 +3,10 @@ def check_pwd(pwd):
         return False
     if len(pwd) > 20:
         return False
+    lower_count = 0
+    for letter in pwd:
+        if letter.islower():
+            lower_count += 1
+    if lower_count == 0:
+        return False
     return True
