@@ -3,6 +3,7 @@ def check_pwd(pwd):
         return False
     if len(pwd) > 20:
         return False
+    digit_count = 0
     lower_count = 0
     upper_count = 0
     symbols = "~`!@#$%^&*()_+-="
@@ -15,6 +16,7 @@ def check_pwd(pwd):
         for character in symbols:
             if letter == character:
                 symbol_count += 1
-    if lower_count == 0 or upper_count == 0 or symbol_count == 0:
+    if lower_count == 0 or upper_count == 0 or symbol_count == 0 or digit_count == 0 or digit_count == len(pwd):
         return False
+
     return True
