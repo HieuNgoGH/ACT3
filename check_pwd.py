@@ -20,5 +20,4 @@ def check_pwd(pwd):
                 symbol_count += 1
     if lower_count == 0 or upper_count == 0 or symbol_count == 0 or digit_count == 0 or digit_count == len(pwd):
         return False
-
     return True
