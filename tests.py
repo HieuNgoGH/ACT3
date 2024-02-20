@@ -8,6 +8,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(test_input), expected)
 
+    def test2(self):
+        test_input = "morethantwentycharacters"
+        expected = False
+        self.assertFalse(check_pwd(test_input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
