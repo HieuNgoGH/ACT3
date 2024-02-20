@@ -23,6 +23,16 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(test_input), expected)
 
+    def test5(self):
+        test_input = "123456789"
+        expected = False
+        self.assertFalse(check_pwd(test_input), expected)
+
+    def test6(self):
+        test_input = "passwordNosymbol"
+        expected = False
+        self.assertFalse(check_pwd(test_input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
