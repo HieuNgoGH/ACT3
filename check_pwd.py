@@ -9,6 +9,8 @@ def check_pwd(pwd):
     symbols = "~`!@#$%^&*()_+-="
     symbol_count = 0
     for letter in pwd:
+        if letter.isdigit():
+            digit_count += 1
         if letter.islower():
             lower_count += 1
         if letter.isupper():
