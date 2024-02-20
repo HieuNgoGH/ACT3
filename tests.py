@@ -18,6 +18,11 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(test_input), expected)
 
+    def test4(self):
+        test_input = "checkforuppercase"
+        expected = False
+        self.assertFalse(check_pwd(test_input), expected)
+
 
 if __name__ == '__main__':
     unittest.main()
